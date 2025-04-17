@@ -1,0 +1,5 @@
+test-results/
+assets/
+report.htoml
+.idea/
+__pycache__/
