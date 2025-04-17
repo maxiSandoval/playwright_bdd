@@ -1,15 +1,18 @@
 ## Playwright Python pytest_bdd example
 - Depends on [pytest-playwright](https://github.com/microsoft/playwright-pytest) 
-- pip install pytest-playwright
-- pip install pytest-bdd
-- playwright install
+
+To install project packages
+
+```
+pip install -r requirements.txt
+```
 
 ## Command Line Example
 Use "pytest" to run all the tests
 
 Other examples
-Use "pytest tests/test_with_bdd.py" to run all the tests in the test_without_bdd module
-Use "pytest tests/without_bdd/test_without_bdd.py::test_select_numbers_link" to run the test_select_numbers_link test
+Use "pytest tests/test_pytest_bdd.py" to run specific file test
+Use "pytest tests/without_bdd/test_ui_validation.py::test_handle_alert_boxes" to run the test_handle_alert_boxes test 
 
 ## Playwright Documentation
 
@@ -24,8 +27,6 @@ See [https://pypi.org/project/pytest-bdd/](https://pypi.org/project/pytest-bdd/)
 ## Page Object example
 This test is using a standard page object model, where the selectors 
 and functions are group inside a class.
-
-Example is given with and without the bdd layer
 
 Alternative format that uses files instead of objects to group the pages can be found
 [here](https://github.com/cmoir/playwright-pytest-pagefile-example)
